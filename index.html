@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANGO — Where businesses grow</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a class="brand" href="#" data-action="home">
+        <span class="brand-mark">M</span>
+        <span>MANGO<small>BUSINESS CONNECT</small></span>
+      </a>
+      <nav id="mainNav">
+        <button data-page="home" class="nav-link active">Home</button>
+        <button data-page="explore" class="nav-link">Explore</button>
+        <button data-page="orders" class="nav-link">My orders</button>
+        <button data-page="dashboard" class="nav-link">Dashboard</button>
+      </nav>
+      <div class="top-actions">
+        <span id="userLabel" class="user-label">Guest</span>
+        <button id="loginBtn" class="btn btn-outline">Sign in</button>
+        <button id="logoutBtn" class="btn btn-dark hidden">Sign out</button>
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+      </div>
+    </header>
+
+    <main id="view"></main>
+
+    <footer>
+      <div class="footer-brand">MANGO<span>®</span></div>
+      <p>Where businesses grow and customers connect.</p>
+      <small>Local demonstration prototype · No real payments are processed.</small>
+    </footer>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast"></div>
+</body>
+</html>
